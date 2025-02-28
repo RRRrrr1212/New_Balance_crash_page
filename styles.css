@@ -1,0 +1,248 @@
+/* ======= Reset & Base Style ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif; /* 建議依實際NB品牌字體替換 */
+    background-color: #fff;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* ======= Header ======= */
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+.logo {
+    width: 80px; /* 調整LOGO大小 */
+    height: auto;
+}
+
+/* ======= Main Content ======= */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-section {
+    margin-bottom: 2rem;
+}
+
+.hero-container {
+    display: grid;
+    place-items: center; /* 水平 + 垂直置中 */
+    height: 100vh;
+}
+
+.hero-image {
+    width: 65vw;
+    max-width: 1920px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.error-message {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.error-desc {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* ======= Middle Black Section (Subscription) ======= */
+.subscribe-section {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.subscribe-text {
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.subscribe-btn {
+    background-color: #D40A47; /* NB 紅色可依需求調整 */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: opacity 0.2s ease;
+}
+
+.subscribe-btn:hover {
+    opacity: 0.8;
+}
+
+/* ======= Footer ======= */
+.footer {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+/* footer-top: 連結群 + 品牌介紹 */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* 左側連結區 */
+.footer-links {
+    display: flex;
+    gap: 3rem; /* 調整列間距 */
+}
+
+.footer-column {
+    min-width: 120px;
+}
+
+.footer-column h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: #D40A47;
+}
+
+/* 右側品牌介紹區 */
+.footer-brand {
+    max-width: 300px; /* 調整右側寬度 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    width: 70px;
+    margin-bottom: 1rem;
+}
+
+.brand-desc {
+    margin-bottom: 1rem;
+    color: #666;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.social-media {
+    display: flex;
+    gap: 1rem; /* 圖示之間的間距 */
+}
+
+.social-media a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.social-media img {
+    width: 100%;
+    height: auto;
+}
+
+/* footer-bottom: 語系 + 條款 + 版權 */
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap; /* 以便在小螢幕下換行 */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    border-top: 1px solid #eee;
+    font-size: 0.875rem;
+}
+
+/* 語系切換 */
+.footer-language {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.lang-flag {
+    width: 24px;
+    height: auto;
+}
+
+/* 條款連結 */
+.footer-policies {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-policies a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.footer-policies a:hover {
+    color: #D40A47;
+}
+
+/* 版權資訊 */
+.footer-bottom div {
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom span {
+    font-size: 0.9rem;
+    color: #666;
+}
