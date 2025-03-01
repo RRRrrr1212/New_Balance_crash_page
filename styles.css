@@ -32,20 +32,22 @@ html, body {
 }
 
 .logo {
-    width: 80px; /* 調整LOGO大小 */
+    width: 18%; /* 調整LOGO大小 */
     height: auto;
 }
 
 /* ======= Main Content ======= */
 .main-content {
+    width: 100%;
     max-width: 1200px;
-    margin: 0.5rem auto;
-    padding: 0 1rem;
+    margin: 0 auto;
+    padding: 0;
 }
+
 
 .hero-section {
     position: relative;
-    width: 90%;
+    width: 100%;
     aspect-ratio: 16/9;  /* 固定寬高比，例如16:9 */
     overflow: hidden;
 }
@@ -55,7 +57,7 @@ html, body {
     height: 100%;
     object-fit: cover;
     display: block;
-    margin: 0 auto;
+    margin-top: 0.6rem;
 }
 
 
@@ -92,7 +94,7 @@ html, body {
     align-items: flex-start; /* 上對齊 */
     justify-content: space-between;
     max-width: 700px;
-    margin: 1rem auto 3rem auto; /* 水平置中 */
+    margin: 1rem auto; /* 水平置中 */
     padding: 0 1rem;
 }
 
@@ -110,10 +112,10 @@ html, body {
 }
 
 .red-line {
-    height: 4px;
+    height: 3px;
     width: 120px;
     background-color: #D40A47;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.3rem;
 }
 
 .section-desc {
@@ -130,7 +132,7 @@ html, body {
     flex-direction: column;
     gap: 1rem;
     width: 200px; /* 固定寬度，可依需求調整 */
-    margin-top: 4rem;
+    margin: auto;
 }
 
 /* 按鈕基本樣式 */
@@ -190,7 +192,6 @@ html, body {
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-    margin-top: 2rem;
 }
 
 .subscribe-text {
@@ -353,3 +354,21 @@ html, body {
     font-size: 0.9rem;
     color: #666;
 }
+
+/* 桌面版 */
+@media (min-width: 1024px) {
+    .hero-section {
+        height: 500px;
+    }
+}
+@media (max-width: 1366px) {
+    .hero-section {
+        height: 400px; /* 根據需要調整高度 */
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    /* 調整其他元素間距或字型大小 */
+}
+
+
