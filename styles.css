@@ -43,19 +43,21 @@ html, body {
     padding: 0 1rem;
 }
 
-/* Hero 區塊設定 */
 .hero-section {
-    position: relative; /* 以便定位內部絕對定位元素 */
-    margin-bottom: 0.5rem;
+    position: relative;
+    width: 90%;
+    aspect-ratio: 16/9;  /* 固定寬高比，例如16:9 */
+    overflow: hidden;
 }
 
-/* 讓圖片置中且充滿父容器寬度 */
 .hero-image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
     margin: 0 auto;
 }
+
 
 /* Slider 按鈕樣式 */
 .slider-btn {
