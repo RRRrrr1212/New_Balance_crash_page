@@ -43,16 +43,45 @@ html, body {
     padding: 0 1rem;
 }
 
+/* Hero 區塊設定 */
 .hero-section {
+    position: relative; /* 以便定位內部絕對定位元素 */
     margin-bottom: 0.5rem;
 }
 
+/* 讓圖片置中且充滿父容器寬度 */
 .hero-image {
-    width: 67vw;
-    max-width: 1920px;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+/* Slider 按鈕樣式 */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑底，符合品牌簡約感 */
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.2s ease;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slider-prev {
+    left: 1rem;
+}
+
+.slider-next {
+    right: 1rem;
 }
 
 /* 錯誤訊息區域左右排列 */
