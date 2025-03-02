@@ -364,14 +364,77 @@ html, body {
         height: 500px;
     }
 }
+
+/* 📌 筆電（1366px - 1920px） */
 @media (max-width: 1366px) {
     .hero-section {
-        height: 400px; /* 根據需要調整高度 */
+        height: 400px;
     }
     .section-title {
         font-size: 2rem;
     }
-    /* 調整其他元素間距或字型大小 */
+}
+
+/* 📌 平板（768px - 1023px） */
+@media (max-width: 1024px) {
+    .main-content {
+        max-width: 90%;
+    }
+    .hero-section {
+        width: 100%;
+        height: auto;
+    }
+    .error-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .button-container {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/* 📌 手機（767px 以下） */
+@media (max-width: 767px) {
+    .hero-section {
+        width: 100%;
+        aspect-ratio: 16/9;
+        height: auto;
+    }
+
+    .error-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-desc {
+        font-size: 0.95rem;
+    }
+
+    .button-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
 }
 
 
