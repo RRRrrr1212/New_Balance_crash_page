@@ -2,12 +2,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     // 定義圖片來源陣列（請依需求替換圖片檔案路徑）
     const images = [
-        "iu-placeholder.jpg",
-        "iu-placeholder1.jpg",
-        "iu-placeholder2.jpg",
-        "iu-placeholder3.jpg",
-        "iu-placeholder4.jpg",
-        "iu-placeholder5.jpg"
+        "images/iu-placeholder.jpg",
+        "images/iu-placeholder1.jpg",
+        "images/iu-placeholder2.jpg",
+        "images/iu-placeholder3.jpg",
+        "images/iu-placeholder4.jpg",
+        "images/iu-placeholder5.jpg"
     ];
 
     let currentIndex = 0;
